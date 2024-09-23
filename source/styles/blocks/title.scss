@@ -1,0 +1,14 @@
+@use "../common/variables.scss";
+
+.title {
+  margin: 0;
+  font-family: "Roboto-Bold", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.13px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 36px;
+    line-height: 42.19px;
+  }
+}

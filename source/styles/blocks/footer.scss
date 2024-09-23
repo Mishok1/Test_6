@@ -1,0 +1,135 @@
+@use "../common/variables.scss";
+
+.footer {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  background-color: #f4f4f4;
+  padding: 24px 0;
+}
+
+.footer__container {
+  padding: 0 10px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.footer__navigation {
+  margin-bottom: 18px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 24px;
+  }
+}
+
+.footer__socials {
+  margin: 0;
+  margin-bottom: 24px;
+  display: flex;
+  gap: 12px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 0;
+    grid-row: 1 / 4;
+    grid-column: 2 / 3;
+    justify-self: flex-end;
+  }
+}
+
+.footer__copyright {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #8d8d8d;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.footer__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 24px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    gap: 62px;
+  }
+}
+
+.footer__link {
+  color: inherit;
+}
+
+
+.footer__address-item--tel {
+  flex-direction: column;
+  row-gap: 8px;
+
+  @media (min-width: variables.$tablet-width) {
+    flex-direction: row;
+    column-gap: 24px;
+  }
+}
+
+
+.footer__address {
+  font-style: normal;
+  margin-bottom: 12px;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / 2;
+    margin-bottom: 24px;
+  }
+}
+
+.footer__address-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  column-gap: 36px;
+  width: 100%;
+}
+
+.footer__address-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: no-repeat center;
+  }
+
+  &--tel::before {
+    width: 19px;
+    height: 19px;
+    background-image: url("../../icons/tel.svg");
+  }
+
+  &--mail::before {
+    width: 26px;
+    height: 17px;
+    background-image: url("../../icons/mail.svg");
+  }
+}
+
+.footer__address-text {
+  margin: 0;
+}

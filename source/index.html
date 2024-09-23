@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -10,116 +10,253 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body>
   <header class="header">
     <div class="header__container container">
-      <div class="header__logo logo">
-        <img class="logo__image" src="logo.svg" width="149" height="21" alt="Электросити.">
-      </div>
       <address class="header__address address">
-        <p>г. Рязань</p>
-        <p>Магазины</p>
-        <p>8 (800) 000 00 00</p>
+        <ul class="address__list">
+          <li class="address__item address__item--map">
+            <p class="address__text">г. Рязань</p>
+          </li>
+          <li class="address__item address__item--shop">
+            <p class="address__text">Магазины</p>
+          </li>
+          <li class="address__item address__item--tel">
+            <p class="address__text">8 (800) 000 00 00</p>
+          </li>
+        </ul>
       </address>
-      <div class="header__search search">
-        <form action="#" method="post">
+      <div class="header__wrapper">
+        <a class="header__logo logo" href="index.html">
+          <svg viewBox="0 0 148 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M5 2.94c-.56 0-1.11.08-1.65.24-.55.15-1.08.34-1.6.56l-.84-2.12a10.62 10.62 0 0 1 4.14-.87c.92 0 1.73.14 2.43.43.72.28 1.32.7 1.81 1.25.5.55.88 1.22 1.13 2.02.27.79.4 1.69.4 2.7 0 1.27-.21 2.39-.64 3.35a4.86 4.86 0 0 1-1.98 2.22 6.5 6.5 0 0 1-3.4.79 10.33 10.33 0 0 1-3.67-.64v-2.21c.67.2 1.28.37 1.83.48.57.12 1.13.18 1.69.18.53 0 1-.07 1.4-.2a2.62 2.62 0 0 0 1.73-1.58c.16-.4.25-.87.28-1.39h-5.4v-2.15h5.38c-.01-.49-.1-.92-.24-1.29a2.64 2.64 0 0 0-1.59-1.56 3.3 3.3 0 0 0-1.21-.21Zm19.7 10.4h-2.62v-10.23h-3.04a2271.74 2271.74 0 0 0-.73 5.48l-.28 1.51a7.63 7.63 0 0 1-.61 1.84c-.24.51-.59.9-1.03 1.17-.42.26-.99.4-1.68.4a4.01 4.01 0 0 1-1.25-.2v-2.15l.43.12c.15.04.31.05.49.05.23 0 .42-.07.57-.22.15-.15.29-.4.4-.77a26.95 26.95 0 0 0 .56-2.71 347.95 347.95 0 0 0 .95-6.71h7.84v12.41Zm12.1 0h-7.14v-12.42h7.15v2.16h-4.52v2.73h4.2v2.15h-4.2v3.2h4.52v2.17Zm14.53 0h-2.99l-4.5-6.3v6.3h-2.62v-12.42h2.62v6.02l4.45-6.02h2.8l-4.52 5.96 4.76 6.45Zm8.17 0h-2.62v-10.23h-3.37v-2.19h9.37v2.19h-3.38v10.22Zm11.08-12.42c1.6 0 2.76.35 3.5 1.04a3.66 3.66 0 0 1 1.1 2.84 4.8 4.8 0 0 1-.24 1.56c-.16.49-.43.93-.81 1.32a3.8 3.8 0 0 1-1.48.9 6.8 6.8 0 0 1-2.28.34h-1.13v4.41h-2.62v-12.41h3.96Zm-.14 2.16h-1.2v3.68h.87c.5 0 .93-.06 1.29-.19s.63-.33.83-.6c.2-.29.3-.65.3-1.09 0-.61-.17-1.06-.5-1.35-.34-.3-.87-.45-1.59-.45Zm20.18 4.03c0 .96-.12 1.84-.36 2.62-.23.78-.6 1.45-1.08 2.02a4.5 4.5 0 0 1-1.84 1.3c-.74.3-1.62.46-2.63.46-1 0-1.89-.15-2.64-.45a4.97 4.97 0 0 1-1.84-1.3 5.79 5.79 0 0 1-1.08-2.04 9.29 9.29 0 0 1-.35-2.63c0-1.28.21-2.4.63-3.35a4.82 4.82 0 0 1 1.95-2.21c.88-.53 2-.8 3.35-.8s2.45.27 3.32.8a4.7 4.7 0 0 1 1.93 2.22c.43.95.64 2.07.64 3.36Zm-9.05 0c0 .87.1 1.62.33 2.24a3 3 0 0 0 1.02 1.45c.47.33 1.06.5 1.8.5.75 0 1.35-.17 1.8-.5.47-.34.8-.82 1.01-1.45.22-.62.33-1.37.33-2.24 0-1.31-.24-2.34-.73-3.08-.49-.74-1.29-1.11-2.4-1.11a3 3 0 0 0-1.8.5 2.9 2.9 0 0 0-1.03 1.45 6.78 6.78 0 0 0-.33 2.24Zm18.72-4.17a2.73 2.73 0 0 0-2.31 1.15c-.27.35-.47.8-.61 1.32a7.4 7.4 0 0 0-.2 1.75c0 .88.11 1.64.32 2.26.22.62.56 1.09 1.03 1.41.46.32 1.05.49 1.77.49.51 0 1.01-.06 1.51-.18.51-.11 1.06-.28 1.65-.48v2.2a8.86 8.86 0 0 1-3.4.65 5.87 5.87 0 0 1-3.17-.79 4.74 4.74 0 0 1-1.82-2.22 8.8 8.8 0 0 1-.6-3.36c0-.93.13-1.8.39-2.57a5.1 5.1 0 0 1 2.94-3.36 7.18 7.18 0 0 1 4.35-.23c.62.16 1.22.37 1.78.64l-.85 2.13c-.46-.22-.93-.4-1.4-.57a4.14 4.14 0 0 0-1.38-.24Zm7.63-2.02h2.36v6a29.42 29.42 0 0 1-.05 2.03 84.02 84.02 0 0 1-.07 1.4h.05l5.74-9.43h3.15v12.41h-2.35v-5.96c0-.31 0-.65.02-1.03 0-.38.02-.74.03-1.1l.05-.9c.03-.26.04-.44.06-.52h-.07l-5.76 9.51h-3.16v-12.41Zm20.92 12.41h-2.63v-10.22h-3.37v-2.19h9.37v2.19h-3.37v10.22Zm7.1-12.41h2.37v6l-.01.97-.04 1.06a84.02 84.02 0 0 1-.07 1.4h.05l5.74-9.43h3.15v12.41h-2.35v-5.96c0-.31 0-.65.02-1.03l.03-1.1c.03-.34.04-.64.05-.9l.06-.52h-.07l-5.76 9.51h-3.16v-12.41Z"
+              fill="#E11C4B" />
+          </svg>
+        </a>
+        <ul class="header__menu menu">
+          <li class="menu__item menu__item--cart">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#fff" d="M0 0h24v24h-24z" />
+              <path
+                d="M5.33 6v-2.4c0-.7.23-1.38.65-1.96a3.92 3.92 0 0 1 1.72-1.33 4.4 4.4 0 0 1 4.3.6 4.4 4.4 0 0 1 4.3-.6 4 4 0 0 1 1.72 1.33c.42.58.65 1.26.65 1.96v2.4h2c.53 0 1.04.19 1.41.53.38.33.59.8.59 1.27v12a4 4 0 0 1-1.37 2.97 4.94 4.94 0 0 1-3.3 1.23h-11.33c-1.42 0-2.77-.5-3.77-1.4a4.6 4.6 0 0 1-1.57-3.4v-11.4c0-.48.21-.94.59-1.27.37-.34.88-.53 1.41-.53h2Zm8.85 16.2a3.9 3.9 0 0 1-.83-2.4v-12h-10.02v11.4c0 .4.09.78.26 1.15a3 3 0 0 0 .72.97 3.66 3.66 0 0 0 2.36.88h7.51Zm-2.85-16.2v-2.4c0-.48-.2-.94-.58-1.27a2.12 2.12 0 0 0-1.42-.53c-.53 0-1.04.19-1.41.53-.38.33-.59.8-.59 1.27v2.4h4Zm2 0h3.34v-2.4c0-.37-.13-.73-.37-1.04a2 2 0 0 0-.96-.65c-.38-.13-.8-.14-1.2-.05-.4.1-.75.3-1.01.6.13.35.2.74.2 1.14v2.4Zm2.02 13.8c0 .64.28 1.25.78 1.7.5.45 1.17.7 1.88.7.7 0 1.38-.25 1.88-.7.5-.45.78-1.06.78-1.7v-12h-5.32v12Z"
+                fill="#8D8D8D" />
+            </svg>
+            <p class="menu__text">Покупки</p>
+          </li>
+          <li class="menu__item menu__item--shop">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M23.1 4.8v-3.84a.96.96 0 0 0-.96-.96h-20.28a.96.96 0 0 0-.96.96v3.84c-.5.03-.9.45-.9.96v3.95a5.31 5.31 0 0 0 .9 2.98v10.35c0 .53.43.96.96.96h20.28c.53 0 .96-.43.96-.96v-10.35a5.26 5.26 0 0 0 .9-2.98v-3.95c0-.51-.4-.93-.9-.96Zm-20.04-2.64h17.88v2.64h-17.88v-2.64Zm10.86 19.68h-3.84v-3.12h3.84v3.12Zm7.02 0h-5.1v-4.08a.96.96 0 0 0-.96-.96h-5.76a.96.96 0 0 0-.96.96v4.08h-5.1v-7.26l.27.12a5.4 5.4 0 0 0 5.39-.67h.01a5.42 5.42 0 0 0 5.39.67 5.49 5.49 0 0 0 1.18-.67 5.42 5.42 0 0 0 5.38.67l.27-.12v7.26h-.01Zm.9-12.13a3.29 3.29 0 0 1-6.13 1.6.48.48 0 0 0-.42-.24h-.02c-.17 0-.33.1-.42.24a3.28 3.28 0 0 1-2.85 1.65 3.28 3.28 0 0 1-2.85-1.64.5.5 0 0 0-.86 0 3.29 3.29 0 0 1-6.13-1.6v-2.75l.02-.01h19.64l.02.01v2.74Z"
+                fill="#8D8D8D" />
+            </svg>
+            <p class="menu__text">Магазины</p>
+          </li>
+          <li class="menu__item menu__item--map">
+            <svg viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.9 22.95c-1.24-1.8-2.29-3.3-3.18-4.56a96.2 96.2 0 0 1-3.38-4.99 7.19 7.19 0 0 1-1.34-4.4 8 8 0 1 1 16 0 7.19 7.19 0 0 1-1.34 4.4 96.22 96.22 0 0 1-3.38 5 644.3 644.3 0 0 0-3.18 4.55.13.13 0 0 1-.2 0l-.82.57.82-.57Zm.1-9.2a4.75 4.75 0 1 0 0-9.5 4.75 4.75 0 0 0 0 9.5Z"
+                stroke="#8D8D8D" stroke-width="2" />
+            </svg>
+            <p class="menu__text">г. Рязань</p>
+          </li>
+          <li class="menu__item menu__item--login">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.1613 7.09058C14.1613 5.76213 12.973 4.71822 11.5888 4.96762L11.5844 4.96842L11.5844 4.96841C11.1752 5.04047 10.7356 5.3166 10.3829 5.77398C10.0305 6.23097 9.83833 6.77674 9.83833 7.25107V8.25182C9.83833 8.72327 10.0309 9.26619 10.385 9.72348C10.7391 10.1808 11.1812 10.4599 11.5907 10.5356C12.9741 10.7837 14.1613 9.74014 14.1613 8.41231V7.09058ZM11.1856 2.71774C13.9924 2.21335 16.447 4.36009 16.447 7.09058V8.41231C16.447 11.1435 13.9911 13.2906 11.1835 12.7848L11.1798 12.7841C10.0982 12.5856 9.19564 11.9207 8.57785 11.123C7.95958 10.3247 7.55261 9.30037 7.55261 8.25182V7.25107C7.55261 6.2054 7.95518 5.17925 8.57286 4.37823C9.1898 3.57816 10.0947 2.91057 11.1856 2.71774Z"
+                fill="#8D8D8D" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 2.28571C6.63495 2.28571 2.28571 6.63495 2.28571 12C2.28571 17.3651 6.63495 21.7143 12 21.7143C17.3651 21.7143 21.7143 17.3651 21.7143 12C21.7143 6.63495 17.3651 2.28571 12 2.28571ZM0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12Z"
+                fill="#8D8D8D" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M11.9998 16.4468C9.10405 16.4468 6.66155 18.1107 5.64245 20.4037C5.38611 20.9805 4.71072 21.2402 4.13394 20.9839C3.55716 20.7275 3.29739 20.0521 3.55374 19.4754C4.95154 16.3303 8.23028 14.1611 11.9998 14.1611C15.7694 14.1611 19.0481 16.3303 20.4459 19.4754C20.7023 20.0521 20.4425 20.7275 19.8657 20.9839C19.289 21.2402 18.6136 20.9805 18.3572 20.4037C17.3381 18.1107 14.8956 16.4468 11.9998 16.4468Z"
+                fill="#8D8D8D" />
+            </svg>
+            <p class="menu__text">Анастасия</p>
+          </li>
+          <li class="menu__item menu__item--heart">
+            <svg width="24" height="24" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12.9873 0.000335199C12.2626 0.00841138 11.5192 0.161729 10.7919 0.476213L10.7589 0.49139L10.7259 0.509817C10.2649 0.76416 9.84468 1.08233 9.47114 1.45939C7.46079 -0.424241 4.26023 -0.560951 2.07059 1.57755L2.04857 1.59922L2.02856 1.62199C0.107714 3.79551 0.152699 7.14283 1.3041 9.78769L1.3141 9.8083L1.32411 9.82998C2.68017 12.5503 5.21235 14.8618 7.51992 16.7621L7.52592 16.7675L7.53092 16.7719C7.67937 16.8898 7.93464 17.1335 8.22935 17.3735C8.52404 17.6134 8.85693 17.8764 9.34403 17.9773L9.45309 18L9.56316 17.9902C10.0744 17.9425 10.2749 17.738 10.6108 17.509C10.9467 17.2799 11.3185 16.9892 11.7005 16.671C12.4535 16.0439 13.2327 15.321 13.7458 14.8055C13.7524 14.7988 13.7632 14.7893 13.7698 14.7827C13.7708 14.7817 13.7717 14.7804 13.7728 14.7795C14.8535 13.7804 15.9241 12.6286 16.8317 11.2739C16.8319 11.2735 16.8324 11.2732 16.8326 11.2728C16.8343 11.2703 16.8359 11.2677 16.8376 11.2652C18.277 9.16583 18.9752 6.33669 18.1424 3.54935L18.1274 3.49948L18.1074 3.45286C17.1725 1.26313 15.1615 -0.0238608 12.9873 0.000335199ZM13.0133 1.71522C14.5798 1.67618 15.9529 2.58488 16.6345 4.13901C17.2644 6.31482 16.7199 8.53168 15.5469 10.2386L15.5439 10.243L15.5409 10.2473C14.7237 11.469 13.734 12.5384 12.7081 13.4841L12.6951 13.4971L12.6821 13.5101C12.2202 13.976 11.4382 14.7016 10.7239 15.2966C10.3667 15.594 10.0243 15.8599 9.75831 16.0413C9.65829 16.1095 9.56319 16.156 9.48513 16.1919C9.4031 16.1434 9.29898 16.075 9.19097 15.9871C8.97347 15.81 8.74187 15.5839 8.48952 15.3822C8.48559 15.3789 8.48145 15.3757 8.47752 15.3724C6.23811 13.5272 3.87927 11.2866 2.74499 9.02782C1.82412 6.8966 1.86431 4.34571 3.16524 2.84689C4.93413 1.14306 7.56209 1.51347 8.87274 3.26206L9.51114 4.113L10.1285 3.24472C10.4838 2.74547 10.9077 2.36381 11.4223 2.07401C11.9618 1.84572 12.4977 1.72805 13.0133 1.71522Z"
+                fill="#8D8D8D" />
+            </svg>
+            <p class="menu__text">Избранное</p>
+          </li>
+          <li class="menu__item menu__item--cart-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_2499_440)">
+                <path
+                  d="M18.0357 20C16.9506 20 16.0714 20.8952 16.0714 22C16.0714 23.1048 16.9506 24 18.0357 24C19.1208 24 20 23.1048 20 22C20 20.8952 19.1208 20 18.0357 20ZM10.9643 20C9.87921 20 9 20.8952 9 22C9 23.1048 9.87921 24 10.9643 24C12.0494 24 12.9286 23.1048 12.9286 22C12.9286 20.8952 12.0494 20 10.9643 20Z"
+                  fill="#8D8D8D" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18.0357 21C17.5198 21 17.0714 21.4304 17.0714 22C17.0714 22.5696 17.5198 23 18.0357 23C18.5516 23 19 22.5696 19 22C19 21.4304 18.5516 21 18.0357 21ZM10.9643 21C10.4484 21 10 21.4304 10 22C10 22.5696 10.4484 23 10.9643 23C11.4802 23 11.9286 22.5696 11.9286 22C11.9286 21.4304 11.4802 21 10.9643 21ZM16.0714 22C16.0714 20.8952 16.9506 20 18.0357 20C19.1208 20 20 20.8952 20 22C20 23.1048 19.1208 24 18.0357 24C16.9506 24 16.0714 23.1048 16.0714 22ZM9 22C9 20.8952 9.87921 20 10.9643 20C12.0494 20 12.9286 20.8952 12.9286 22C12.9286 23.1048 12.0494 24 10.9643 24C9.87921 24 9 23.1048 9 22Z"
+                  fill="#8D8D8D" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M0 1C0 0.447715 0.447715 0 1 0H5.68085C6.13458 0 6.53145 0.305483 6.64756 0.744107L7.93745 5.61702H23C23.3262 5.61702 23.6319 5.77613 23.8191 6.04332C24.0062 6.31051 24.0513 6.65219 23.9398 6.95876L20.1951 17.2566C20.0514 17.6518 19.6758 17.9149 19.2553 17.9149H9.89362C9.43989 17.9149 9.04302 17.6094 8.92691 17.1708L4.91112 2H1C0.447715 2 0 1.55228 0 1ZM8.46686 7.61702L10.6634 15.9149H18.5549L21.5723 7.61702H8.46686Z"
+                  fill="#8D8D8D" />
+              </g>
+              <defs>
+                <clipPath id="clip0_2499_440">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <p class="menu__text">Корзина</p>
+          </li>
+        </ul>
+        <button class="header__button button">
+          <svg viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 2h24m-24 8h24m-24 8h24" stroke="#8D8D8D" stroke-width="2.167" />
+          </svg>
+        </button>
+        <form class="header__search search" action="#" method="post">
           <label class="search__label">
-            <input class="search__input" type="text">
+            <input class="search__input" type="text" placeholder="Поиск среди товаров">
           </label>
         </form>
       </div>
-      <ul class="header__menu menu">
-        <li class="menu__item">Анастасия</li>
-        <li class="menu__item">Покупки</li>
-        <li class="menu__item">Избранное</li>
-        <li class="menu__item">Корзина</li>
-      </ul>
       <nav class="header__navigation navigation">
         <ul class="navigation__list">
-          <li class="navigation__item navigation__item--promotion">Акции</li>
-          <li class="navigation__item">Смартфоны</li>
-          <li class="navigation__item">Ноутбуки</li>
-          <li class="navigation__item">Телевизоры</li>
-          <li class="navigation__item">Видеотехника</li>
-          <li class="navigation__item">Планшеты</li>
-          <li class="navigation__item">Наушники</li>
-          <li class="navigation__item">Умные часы</li>
-          <li class="navigation__item">Портативная акустика</li>
-          <li class="navigation__item">Сетевое оборудование</li>
-          <li class="navigation__item">Офисная техника</li>
-          <li class="navigation__item">Умный дом</li>
+          <li class="navigation__item navigation__item--promotion">
+            <a class="navigation__link" href="#">Акции</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Смартфоны</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Ноутбуки</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Телевизоры</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Видеотехника</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Планшеты</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Наушники</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Умные часы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Портативная акустика</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Сетевое оборудование</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Офисная техника</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">Умный дом</a>
+          </li>
         </ul>
       </nav>
     </div>
   </header>
-  <main>
+  <main class="main">
     <h1 class="visually-hidden">Акции</h1>
-    <section class="promotion">
+    <section class="main__promotion promotion">
       <div class="promotion__container container">
         <h2 class="promotion__title title">Акции</h2>
         <ul class="promotion__list">
           <li class="promotion__item">
-            <picture class="promotion__picture">
-              <source type="image/webp" srcset="images/#1@1x.webp 1x, images/#1@2x.webp 2x" width="300" height="169">
-              <img class="promotion__image" src="images/#1@1x.jpg" srcset="images/#1@2x.jpg 2x" width="300" height="169"
-                alt="Суперскидки на товары для гейминга.">
-            </picture>
+            <a class="promotion__link" href="#">
+              <picture class="promotion__picture">
+                <source type="image/webp" srcset="images/image1@1x.webp 1x, images/image1@2x.webp 2x" width="300"
+                  height="169">
+                <img class="promotion__image" src="images/image1@1x.jpg" srcset="images/image1@2x.jpg 2x" width="300"
+                  height="169" alt="Суперскидки на товары для гейминга.">
+              </picture>
+            </a>
           </li>
           <li class="promotion__item">
-            <picture class="promotion__picture">
-              <source type="image/webp" srcset="images/#1@1x.webp 1x, images/#1@2x.webp 2x" width="300" height="169">
-              <img class="promotion__image" src="images/#1@1x.jpg" srcset="images/#1@2x.jpg 2x" width="300" height="169"
-                alt="Ц.">
-            </picture>
+            <a class="promotion__link" href="#">
+              <picture class="promotion__picture">
+                <source type="image/webp" srcset="images/image2@1x.webp 1x, images/image2@2x.webp 2x" width="300"
+                  height="169">
+                <img class="promotion__image" src="images/image2@1x.jpg" srcset="images/image2@2x.jpg 2x" width="300"
+                  height="169" alt="Кэшбэк 20%
+                на мониторы Samsung.">
+              </picture>
+            </a>
           </li>
           <li class="promotion__item">
-            <picture class="promotion__picture">
-              <source type="image/webp" srcset="images/#1@1x.webp 1x, images/#1@2x.webp 2x" width="300" height="169">
-              <img class="promotion__image" src="images/#1@1x.jpg" srcset="images/#1@2x.jpg 2x" width="300" height="169"
-                alt="Ц.">
-            </picture>
+            <a class="promotion__link" href="#">
+              <picture class="promotion__picture">
+                <source type="image/webp" srcset="images/image3@1x.webp 1x, images/image3@2x.webp 2x" width="300"
+                  height="169">
+                <img class="promotion__image" src="images/image3@1x.jpg" srcset="images/image3@2x.jpg 2x" width="300"
+                  height="169" alt="Скидки до 30% на технику HP.">
+              </picture>
+            </a>
           </li>
           <li class="promotion__item">
-            <picture class="promotion__picture">
-              <source type="image/webp" srcset="images/#1@1x.webp 1x, images/#1@2x.webp 2x" width="300" height="169">
-              <img class="promotion__image" src="images/#1@1x.jpg" srcset="images/#1@2x.jpg 2x" width="300" height="169"
-                alt="Ц.">
-            </picture>
+            <a class="promotion__link" href="#">
+              <picture class="promotion__picture">
+                <source type="image/webp" srcset="images/image4@1x.webp 1x, images/image4@2x.webp 2x" width="300"
+                  height="169">
+                <img class="promotion__image" src="images/image4@1x.jpg" srcset="images/image4@2x.jpg 2x" width="300"
+                  height="169" alt="Скидка 80%
+                на саундбар.">
+              </picture>
+            </a>
           </li>
           <li class="promotion__item">
-            <picture class="promotion__picture">
-              <source type="image/webp" srcset="images/#1@1x.webp 1x, images/#1@2x.webp 2x" width="300" height="169">
-              <img class="promotion__image" src="images/#1@1x.jpg" srcset="images/#1@2x.jpg 2x" width="300" height="169"
-                alt="Ц.">
-            </picture>
+            <a class="promotion__link" href="#">
+              <picture class="promotion__picture">
+                <source type="image/webp" srcset="images/image5@1x.webp 1x, images/image5@2x.webp 2x" width="300"
+                  height="169">
+                <img class="promotion__image" src="images/image5@1x.jpg" srcset="images/image5@2x.jpg 2x" width="300"
+                  height="169" alt="Скидка 50%
+                на второй  товар Bouch.">
+              </picture>
+            </a>
           </li>
           <li class="promotion__item">
-            <picture class="promotion__picture">
-              <source type="image/webp" srcset="images/#1@1x.webp 1x, images/#1@2x.webp 2x" width="300" height="169">
-              <img class="promotion__image" src="images/#1@1x.jpg" srcset="images/#1@2x.jpg 2x" width="300" height="169"
-                alt="Ц.">
-            </picture>
+            <a class="promotion__link" href="#">
+              <picture class="promotion__picture">
+                <source type="image/webp" srcset="images/image6@1x.webp 1x, images/image6@2x.webp 2x" width="300"
+                  height="169">
+                <img class="promotion__image" src="images/image6@1x.jpg" srcset="images/image6@2x.jpg 2x" width="300"
+                  height="169" alt="iPhone 13 Pro.">
+              </picture>
+            </a>
           </li>
           <li class="promotion__item">
-            <picture class="promotion__picture">
-              <source type="image/webp" srcset="images/#1@1x.webp 1x, images/#1@2x.webp 2x" width="300" height="169">
-              <img class="promotion__image" src="images/#1@1x.jpg" srcset="images/#1@2x.jpg 2x" width="300" height="169"
-                alt="Ц.">
-            </picture>
+            <a class="promotion__link" href="#">
+              <picture class="promotion__picture">
+                <source type="image/webp" srcset="images/image7@1x.webp 1x, images/image7@2x.webp 2x" width="300"
+                  height="169">
+                <img class="promotion__image" src="images/image7@1x.jpg" srcset="images/image7@2x.jpg 2x" width="300"
+                  height="169" alt="Поделись мнением.">
+              </picture>
+            </a>
           </li>
           <li class="promotion__item">
-            <picture class="promotion__picture">
-              <source type="image/webp" srcset="images/#1@1x.webp 1x, images/#1@2x.webp 2x" width="300" height="169">
-              <img class="promotion__image" src="images/#1@1x.jpg" srcset="images/#1@2x.jpg 2x" width="300" height="169"
-                alt="Ц.">
-            </picture>
+            <a class="promotion__link" href="#">
+              <picture class="promotion__picture">
+                <source type="image/webp" srcset="images/image8@1x.webp 1x, images/image8@2x.webp 2x" width="300"
+                  height="169">
+                <img class="promotion__image" src="images/image8@1x.jpg" srcset="images/image8@2x.jpg 2x" width="300"
+                  height="169" alt="Суперскидки
+                по бонусной карте.">
+              </picture>
+            </a>
           </li>
           <li class="promotion__item">
-            <picture class="promotion__picture">
-              <source type="image/webp" srcset="images/#1@1x.webp 1x, images/#1@2x.webp 2x" width="300" height="169">
-              <img class="promotion__image" src="images/#1@1x.jpg" srcset="images/#1@2x.jpg 2x" width="300" height="169"
-                alt="Ц.">
-            </picture>
+            <a class="promotion__link" href="#">
+              <picture class="promotion__picture">
+                <source type="image/webp" srcset="images/image9@1x.webp 1x, images/image9@2x.webp 2x" width="300"
+                  height="169">
+                <img class="promotion__image" src="images/image9@1x.jpg" srcset="images/image9@2x.jpg 2x" width="300"
+                  height="169" alt="Ликвидация!
+                Скидки до 70%.">
+              </picture>
+            </a>
           </li>
         </ul>
       </div>
@@ -127,22 +264,56 @@
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <nav class="footer__navigation navigation">
-        ####
+      <nav class="footer__navigation">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#">Главная</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Акции</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Магазины</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Профиль</a>
+          </li>
+        </ul>
       </nav>
-      <address class="footer__address address">
-        <p>8 (800) 000 00 00</p>
-        <p>electrocity.ru</p>
+      <address class="footer__address">
+        <ul class="footer__address-list">
+          <li class="footer__address-item footer__address-item--tel">
+            <p class="footer__address-text">8 (800) 000 00 00</p>
+          </li>
+          <li class="footer__address-item footer__address-item--mail">
+            <p class="footer__address-text">electrocity.ru</p>
+          </li>
+        </ul>
       </address>
       <ul class="footer__socials socials">
         <li class="socials__item">
-          <img class="socials__image" src="icons/" width="30" height="30px" alt="Vk.">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.1842 5.14124C16.2893 4.79249 16.1842 4.53674 15.6877 4.53674H14.043C13.6245 4.53674 13.4332 4.75799 13.3282 5.00099C13.3282 5.00099 12.492 7.04024 11.307 8.36249C10.9245 8.74724 10.7498 8.86874 10.5413 8.86874C10.437 8.86874 10.2855 8.74724 10.2855 8.39849V5.14124C10.2855 4.72274 10.1648 4.53674 9.816 4.53674H7.2315C6.9705 4.53674 6.813 4.73024 6.813 4.91474C6.813 5.31074 7.4055 5.40224 7.46625 6.51824V8.93924C7.46625 9.46949 7.371 9.56624 7.161 9.56624C6.60375 9.56624 5.24775 7.51949 4.443 5.17649C4.28625 4.72124 4.128 4.53749 3.708 4.53749H2.064C1.59375 4.53749 1.5 4.75874 1.5 5.00174C1.5 5.43824 2.05725 7.59824 4.09575 10.455C5.45475 12.4057 7.368 13.4632 9.111 13.4632C10.1558 13.4632 10.2847 13.2285 10.2847 12.8235V11.349C10.2847 10.8795 10.3845 10.785 10.7153 10.785C10.9583 10.785 11.3767 10.908 12.3525 11.8477C13.467 12.9622 13.6515 13.4625 14.2778 13.4625H15.9218C16.3912 13.4625 16.626 13.2277 16.491 12.7642C16.3433 12.303 15.8108 11.6317 15.1042 10.8375C14.7203 10.3845 14.1465 9.89699 13.9718 9.65324C13.728 9.33899 13.7985 9.20024 13.9718 8.92124C13.9725 8.92199 15.9757 6.10049 16.1842 5.14124Z"
+              fill="#8D8D8D" />
+          </svg>
+          <span class="visually-hidden">Vk</span>
         </li>
         <li class="socials__item">
-          <img class="socials__image" src="icons/" width="30" height="30px" alt="YouTube.">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16.5463 5.20488C16.4566 4.87097 16.2808 4.56645 16.0365 4.32182C15.7922 4.07719 15.4879 3.90102 15.1541 3.81094C13.9254 3.48047 9 3.48047 9 3.48047C9 3.48047 4.07461 3.48047 2.8459 3.80918C2.51195 3.89897 2.2075 4.07504 1.96314 4.31972C1.71877 4.5644 1.54308 4.86906 1.45371 5.20312C1.125 6.43359 1.125 9 1.125 9C1.125 9 1.125 11.5664 1.45371 12.7951C1.63477 13.4736 2.16914 14.008 2.8459 14.1891C4.07461 14.5195 9 14.5195 9 14.5195C9 14.5195 13.9254 14.5195 15.1541 14.1891C15.8326 14.008 16.3652 13.4736 16.5463 12.7951C16.875 11.5664 16.875 9 16.875 9C16.875 9 16.875 6.43359 16.5463 5.20488ZM7.43555 11.3555V6.64453L11.5137 8.98242L7.43555 11.3555Z"
+              fill="#8D8D8D" />
+          </svg>
+          <span class="visually-hidden">YouTube</span>
         </li>
         <li class="socials__item">
-          <img class="socials__image" src="icons/" width="30" height="30px" alt="Telegram.">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M15.4988 2.78774L2.20126 7.91549C1.29376 8.27999 1.29901 8.78624 2.03476 9.01199L5.44876 10.077L13.3478 5.09324C13.7213 4.86599 14.0625 4.98824 13.782 5.23724L7.38226 11.013H7.38076L7.38226 11.0137L7.14676 14.5327C7.49176 14.5327 7.64401 14.3745 7.83751 14.1877L9.49576 12.5752L12.945 15.123C13.581 15.4732 14.0378 15.2932 14.196 14.5342L16.4603 3.86324C16.692 2.93399 16.1055 2.51324 15.4988 2.78774Z"
+              fill="#8D8D8D" />
+          </svg>
+          <span class="visually-hidden">Telegram</span>
         </li>
       </ul>
       <p class="footer__copyright">© 2014-2021 «ЭЛЕКТРОСИТИ». Все права защищены</p>

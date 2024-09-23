@@ -1,0 +1,39 @@
+@use "../common/variables.scss";
+
+.navigation__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 18px;
+  overflow-x: auto;
+
+  @media (min-width: variables.$tablet-width) {
+    gap: 36px;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.navigation__item {
+  white-space: nowrap;
+
+  &--promotion {
+    color: #e11c4b;
+    display: flex;
+    gap: 6px;
+
+    &::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      background: url("../../icons/promotion.svg") no-repeat center;
+    }
+  }
+}
+
+.navigation__link {
+  color: inherit;
+}
